@@ -3,11 +3,11 @@ const router = express.Router();
 
 
 router.get('/users/signin', (req, res) =>{
-	res.send('Ingresando a la aplicacion');
+	res.render('users/login');
 });
 
 router.get('/users/signup', (req, res)=>{
-	res.send('Formulario de autentication');
+	res.render('users/register');
 });
 
 
